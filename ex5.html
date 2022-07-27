@@ -30,6 +30,7 @@
         background-color: #c22177;
         margin: 2%;
         border-radius: 3%;
+        padding-left: 2%;
       }
     </style>
   </head>
@@ -44,9 +45,9 @@
         MAIN_WRAP.appendChild(NEW_COLUMN);
         for (let v = 0; v < count; v++) {
           const NEW_DIV = document.createElement("div");
-          NEW_DIV.classList.add("innerDiv")
+          NEW_DIV.classList.add("innerDiv");
           NEW_DIV.innerText = (v + 1).toString();
-          NEW_DIV.style.height = (100/count) + "%";
+          NEW_DIV.style.height = 100 / count + "%";
           NEW_COLUMN.appendChild(NEW_DIV);
         }
         count++;
