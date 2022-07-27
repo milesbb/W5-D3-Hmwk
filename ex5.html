@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex2</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        display: flex;
+      }
+
+      .flexWrap {
+        display: flex;
+        width: 100%;
+        height: 99%;
+      }
+
+      .flexColumns {
+        display: flex;
+        flex-direction: column;
+        width: 8.5%;
+        height: 100%;
+        margin: 0.2%;
+      }
+
+      .innerDiv {
+        width: 98%;
+        background-color: #c22177;
+        margin: 2%;
+        border-radius: 3%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flexWrap"></div>
+    <script>
+      let count = 1;
+      const MAIN_WRAP = document.getElementsByClassName("flexWrap")[0];
+      for (let i = 0; i < 12; i++) {
+        const NEW_COLUMN = document.createElement("div");
+        NEW_COLUMN.classList.add("flexColumns");
+        MAIN_WRAP.appendChild(NEW_COLUMN);
+        for (let v = 0; v < count; v++) {
+          const NEW_DIV = document.createElement("div");
+          NEW_DIV.classList.add("innerDiv")
+          NEW_DIV.innerText = (v + 1).toString();
+          NEW_DIV.style.height = (100/count) + "%";
+          NEW_COLUMN.appendChild(NEW_DIV);
+        }
+        count++;
+      }
+    </script>
+  </body>
+</html>
