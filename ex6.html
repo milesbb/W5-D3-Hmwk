@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex6</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .mainWrap {
+        display: flex;
+        margin: auto;
+        justify-content: center;
+        height: 400px;
+        width: 60%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+        object-fit: cover;
+      }
+
+      .greenBox {
+        background-color: #89b46f;
+        color: white;
+        width: 50%;
+        border-radius: 10% 0% 0% 10%;
+        border: 2px solid black;
+        text-align: center;
+        vertical-align: middle;
+        padding-top: 17%;
+      }
+
+      .secondWrap {
+        display: flex;
+        width: 50%;
+      }
+
+      .blueBox {
+        background-color: #6a9afc;
+        color: white;
+        width: calc((100% / 3));
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        padding-top: 70%;
+        padding-left: 10px;
+      }
+
+      .thirdWrap {
+        display: flex;
+        flex-direction: column;
+        width: calc((100% / 3) * 2);
+      }
+
+      .yellow1 {
+        background-color: #faf7c0;
+        color: black;
+        height: calc(100% / 3);
+        border-radius: 0% 20% 0% 0%;
+        width: 100%;
+        border-top: 2px solid black;
+        border-right: 2px solid black;
+        text-align: center;
+        padding-top: 20%;
+      }
+
+      .yellow2 {
+        background-color: #f7ed72;
+        color: black;
+        height: calc(100% / 3);
+        width: 100%;
+        border-right: 2px solid black;
+        text-align: center;
+        padding-top: 20%;
+      }
+
+      .yellow3 {
+        background-color: #f3e53e;
+        color: black;
+        height: calc(100% / 3);
+        width: 100%;
+        border-radius: 0% 0% 20% 0%;
+        border-right: 2px solid black;
+        border-bottom: 2px solid black;
+        text-align: center;
+        padding-top: 20%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="mainWrap">
+      <div class="greenBox">
+        <span>First Column</span>
+        <br />
+        <span>Height 400px;</span>
+        <br />
+        <span>Greenish background</span>
+        <br />
+        <span>Text Centered</span>
+      </div>
+      <div class="secondWrap">
+        <div class="blueBox">
+          <span>Second Column</span>
+          <br />
+          <span>Text To the bottom</span>
+          <br />
+          <span>Bold, blueish</span>
+          <br />
+          <span>background</span>
+        </div>
+        <div class="thirdWrap">
+          <div class="yellow1">
+            <span>Third Column Part 1</span>
+          </div>
+          <div class="yellow2">
+            <span>Third Column Part 2</span>
+          </div>
+          <div class="yellow3">
+            <span>Third Column Part 3</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
