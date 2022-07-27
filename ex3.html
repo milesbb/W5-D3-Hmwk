@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ex3</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      body {
+        display: flex;
+      }
+
+      header {
+        width: 100%;
+        margin: 0;
+        display: block;
+        position: relative;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        height: 20%;
+      }
+
+      footer {
+        width: 100%;
+        margin: 0;
+        display: block;
+        position: relative;
+        
+        bottom: 0%;
+        height: 20%;
+      }
+
+      .mainWrap {
+        width: 90%;
+        position: relative;
+        height: 100%;
+      }
+
+      .flexWrap {
+        display: flex;
+        height: 80%;
+      }
+
+      .newWrap {
+        width: 100%;
+      }
+
+      article {
+        width: 90%;
+        height: 80%;
+      }
+
+      aside {
+        width: 20%;
+        height: 100%;
+        position: absolute;
+        right: 0%;
+      }
+
+      nav {
+        width: 10%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>Nav</nav>
+    <div class="mainWrap">
+      <header>Header</header>
+      <div class="flexWrap">
+        <div class="newWrap">
+          <article>Article</article>
+          <footer>Footer</footer>
+        </div>
+        <aside>Aside</aside>
+      </div>
+    </div>
+  </body>
+</html>

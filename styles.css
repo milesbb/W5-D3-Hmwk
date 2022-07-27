@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@200&family=Outfit&display=swap");
+
+html, body {
+    height: 100%;
+    width: 100%;
+    color: white;
+    font-family: "Outfit", sans-serif;
+    font-weight: bold;
+    margin: 0%;
+}
+
+header, footer {
+    background-color: #111023;
+}
+
+article {
+    color: black;
+    background-color: white;
+}
+
+aside {
+    background-color: #320388;
+}
+
+nav {
+    background-color: #c22177;
+}
